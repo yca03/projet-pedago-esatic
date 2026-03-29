@@ -1,54 +1,121 @@
 import React from "react";
-import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import MainLayout from "./layouts/MainLayout";
+import Dashboard from "./pages/Admin/Dashboard";
+import Login from "./pages/Admin/Auth/Login";
+import ListeTeachers from "./pages/Admin/teachers/Teachers"; 
+import CoursAttributions from "./pages/Admin/cours/CoursAttributions";
+import Comptes from "./pages/Admin/compte/Comptes";
+import Notifications from "./pages/Admin/notifications/Notifications";
+import Journaux from "./pages/Admin/journal/Journaux";
 
-import Dashboard from "./pages/Dashboard";
 
-// import ListeEnseignants from "./pages/enseignants/ListeEnseignants";
-// import AjouterEnseignant from "./pages/enseignants/AjouterEnseignant";
 
-// import ListeCours from "./pages/cours/ListeCours";
-// import AjouterCours from "./pages/cours/AjouterCours";
 
-// import ListeSyllabus from "./pages/syllabus/ListeSyllabus";
+function App() {
+  const isAuth = localStorage.getItem("user"); 
 
-// import Progression from "./pages/progression/Progression";
+  return (
+    <Router>
+      <Routes>
 
-// import ListeReunions from "./pages/reunions/ListeReunions";
+        {/* redirection par défaut */}
+        <Route path="/" element={<Navigate to="/login" />} />
 
-function App(){
+        {/* login */}
+        <Route path="/login" element={<Login />} />
 
-return(
+        {/* dashboard */}
+        <Route 
+          path="/dashboard" 
+          element={
+            isAuth ? (
+              <MainLayout>
+                <Dashboard />
+              </MainLayout>
+            ) : (
+              <Navigate to="/login" />
+            )
+          } 
+        />
 
-<Router>
+        {/* enseignants */}
+        <Route 
+          path="/enseignants" 
+          element={
+            isAuth ? (
+              <MainLayout>
+                <ListeTeachers />
+              </MainLayout>
+            ) : (
+              <Navigate to="/login" />
+            )
+          } 
+        />
 
-<MainLayout>
 
-<Routes>
+         {/* ajouter un cour */}
+        <Route 
+          path="/cours" 
+          element={
+            isAuth ? (
+              <MainLayout>
+                <CoursAttributions />
+              </MainLayout>
+            ) : (
+              <Navigate to="/login" />
+            )
+          } 
+        />
 
-<Route path="/" element={<Dashboard/>}/>
 
-{/* <Route path="/enseignants" element={<ListeEnseignants/>}/>
-<Route path="/enseignants/ajouter" element={<AjouterEnseignant/>}/>
+        {/* ajouter un compte  */}
+        <Route 
+          path="/comptes" 
+          element={
+            isAuth ? (
+              <MainLayout>
+                <Comptes />
+              </MainLayout>
+            ) : (
+              <Navigate to="/login" />
+            )
+          } 
+        />
+         {/* ajouter un notify  */}
+              <Route 
+                path="/journaux" 
+                element={
+                  isAuth ? (
+                    <MainLayout>
+                      <Journaux />
+                    </MainLayout>
+                  ) : (
+                    <Navigate to="/login" />
+                  )
+                } 
+              />
 
-<Route path="/cours" element={<ListeCours/>}/>
-<Route path="/cours/ajouter" element={<AjouterCours/>}/>
 
-<Route path="/syllabus" element={<ListeSyllabus/>}/>
+        {/* ajouter un notify  */}
+          <Route 
+            path="/notifications" 
+            element={
+              isAuth ? (
+                <MainLayout>
+                  <Notifications />
+                </MainLayout>
+              ) : (
+                <Navigate to="/login" />
+              )
+            } 
+          />
+      </Routes>
 
-<Route path="/progression" element={<Progression/>}/>
-
-<Route path="/reunions" element={<ListeReunions/>}/> */}
-
-</Routes>
-
-</MainLayout>
-
-</Router>
-
-)
-
+    </Router>
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,90 @@
+/* ============================================
+   Journaux.css
+   ============================================ */
+
+.journaux-page {
+  padding: 30px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+/* PAGE HEADER */
+.journaux-header {
+  margin-bottom: 28px;
+}
+
+.journaux-header h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.journaux-subtitle {
+  margin: 4px 0 0 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* CARD */
+.journaux-card {
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+/* LOG LIST */
+.log-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* LOG LINE */
+.log-line {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 16px 28px;
+  border-bottom: 1px solid #f1f5f9;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  transition: background 0.15s;
+}
+
+.log-line:last-child {
+  border-bottom: none;
+}
+
+.log-line:hover {
+  background: #f8fafc;
+}
+
+/* DATE */
+.log-date {
+  color: #64748b;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* SEPARATEUR */
+.log-sep {
+  color: #cbd5e1;
+  flex-shrink: 0;
+}
+
+/* TYPE */
+.log-type {
+  font-weight: 700;
+  white-space: nowrap;
+  flex-shrink: 0;
+  min-width: 90px;
+}
+
+/* MESSAGE */
+.log-message {
+  color: #334155;
+  word-break: break-all;
+}
