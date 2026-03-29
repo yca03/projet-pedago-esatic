@@ -1,0 +1,292 @@
+/* ============================================
+   Comptes.css — page Comptes Utilisateurs
+   ============================================ */
+
+.comptes-page {
+  padding: 30px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+/* PAGE HEADER */
+.comptes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.comptes-header h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.comptes-subtitle {
+  margin: 4px 0 0 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.btn-nouveau {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.btn-nouveau:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* FILTERS */
+.comptes-filters {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.comptes-filters input {
+  padding: 9px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  width: 260px;
+  transition: border-color 0.2s;
+  background: #f8fafc;
+}
+
+.comptes-filters input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+  background: white;
+}
+
+.comptes-filters select {
+  padding: 9px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  background: #f8fafc;
+  color: #374151;
+  cursor: pointer;
+}
+
+.comptes-count {
+  margin-left: auto;
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* TABLE WRAPPER */
+.comptes-table-wrap {
+  background: white;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+/* TABLE */
+.comptes-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comptes-table thead tr {
+  background: #f8fafc;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.comptes-table thead th {
+  padding: 14px 18px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  color: #94a3b8;
+  letter-spacing: 0.6px;
+  white-space: nowrap;
+}
+
+.comptes-table tbody tr {
+  border-bottom: 1px solid #f1f5f9;
+  transition: background 0.15s;
+}
+
+.comptes-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.comptes-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.comptes-table tbody td {
+  padding: 16px 18px;
+  vertical-align: middle;
+}
+
+/* USER CELL */
+.user-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.user-nom {
+  margin: 0 0 2px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.user-grade {
+  margin: 0;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* EMAIL */
+.user-email {
+  font-size: 13px;
+  color: #3b82f6;
+}
+
+/* ROLE BADGE */
+.role-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+/* UP / SPECIALITE */
+.td-up,
+.td-spe {
+  font-size: 13px;
+  color: #475569;
+}
+
+/* STATUT BADGE */
+.statut-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.statut-actif {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.statut-inactif {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* ACTIONS */
+.actions-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-modifier {
+  background: white;
+  border: 1px solid #e2e8f0;
+  color: #2563eb;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  white-space: nowrap;
+}
+
+.btn-modifier:hover {
+  background: #eff6ff;
+  border-color: #2563eb;
+}
+
+.btn-desactiver {
+  background: #f97316;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.btn-desactiver:hover {
+  background: #ea580c;
+}
+
+.btn-reactiver {
+  background: #16a34a;
+}
+
+.btn-reactiver:hover {
+  background: #15803d;
+}
+
+.btn-supprimer {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-supprimer:hover {
+  background: #dc2626;
+}
+
+/* EMPTY */
+.td-empty {
+  text-align: center;
+  padding: 40px;
+  color: #94a3b8;
+  font-size: 14px;
+}
