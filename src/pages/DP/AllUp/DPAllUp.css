@@ -1,0 +1,29 @@
+.up-page { padding: 30px; background: #f8fafc; min-height: 100vh; }
+.up-header { margin-bottom: 28px; }
+.up-header h2 { margin: 0; font-size: 26px; font-weight: 700; color: #1e293b; }
+.up-subtitle { margin: 4px 0 0 0; font-size: 14px; color: #64748b; }
+
+.up-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+@media (max-width: 1200px) { .up-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 700px)  { .up-grid { grid-template-columns: 1fr; } }
+
+.up-card { background: white; border-radius: 14px; padding: 22px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.04); display: flex; flex-direction: column; gap: 12px; transition: transform 0.2s; }
+.up-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+
+.up-card-top { display: flex; justify-content: space-between; align-items: center; }
+.up-code { background: #eff6ff; color: #2563eb; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 6px; font-family: monospace; }
+.up-statut { font-size: 12px; font-weight: 600; color: #16a34a; }
+
+.up-nom { margin: 0; font-size: 17px; font-weight: 700; color: #1e293b; }
+.up-rup { margin: 0; font-size: 13px; color: #64748b; }
+
+.up-stats { display: flex; gap: 20px; padding: 14px 0; border-top: 1px solid #f1f5f9; border-bottom: 1px solid #f1f5f9; }
+.up-stat { display: flex; flex-direction: column; align-items: center; flex: 1; }
+.up-stat-value { margin: 0; font-size: 26px; font-weight: 800; color: #1e293b; }
+.up-stat-label { margin: 0; font-size: 12px; color: #94a3b8; }
+
+.up-taux { display: flex; flex-direction: column; gap: 6px; }
+.up-taux-label { margin: 0; font-size: 13px; color: #475569; font-weight: 500; }
+.up-progress-bar { height: 8px; background: #f1f5f9; border-radius: 10px; overflow: hidden; }
+.up-progress-fill { height: 100%; border-radius: 10px; transition: width 0.5s; }
+.up-taux-value { margin: 0; font-size: 13px; font-weight: 700; text-align: right; }

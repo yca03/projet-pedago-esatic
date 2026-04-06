@@ -1,0 +1,48 @@
+.rupval-page{padding:30px;background:#f8fafc;min-height:100vh;}
+.rupval-header{margin-bottom:28px;}
+.rupval-header h2{margin:0;font-size:26px;font-weight:700;color:#1e293b;}
+.rupval-subtitle{margin:4px 0 0 0;font-size:14px;color:#64748b;}
+.rupval-table-wrap{background:white;border-radius:14px;border:1px solid #e2e8f0;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.04);}
+.rupval-table{width:100%;border-collapse:collapse;}
+.rupval-table thead tr{background:#f8fafc;border-bottom:2px solid #f1f5f9;}
+.rupval-table thead th{padding:14px 20px;text-align:left;font-size:11px;font-weight:700;color:#94a3b8;letter-spacing:.6px;}
+.rupval-table tbody tr{border-bottom:1px solid #f1f5f9;transition:background .15s;}
+.rupval-table tbody tr:last-child{border-bottom:none;}
+.rupval-table tbody tr:hover{background:#f8fafc;}
+.rupval-table tbody td{padding:16px 20px;vertical-align:middle;}
+.rupval-doc{margin:0 0 2px 0;font-size:14px;font-weight:600;color:#1e293b;}
+.rupval-doc-sub{margin:0;font-size:12px;color:#94a3b8;}
+.rupval-code{color:#2563eb;font-family:monospace;font-size:13px;font-weight:700;}
+.rupval-ens{font-size:14px;color:#334155;}
+.rupval-date{font-size:14px;color:#94a3b8;}
+.rupval-type{display:inline-block;font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;}
+.rupval-syl{background:#dbeafe;color:#2563eb;}
+.rupval-prog{background:#fed7aa;color:#ea580c;}
+.rupval-actions{display:flex;gap:10px;}
+.rupval-btn-valider{background:#16a34a;color:white;border:none;padding:7px 16px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;}
+.rupval-btn-valider:hover{background:#15803d;}
+.rupval-btn-rejeter{background:#ef4444;color:white;border:none;padding:7px 16px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;}
+.rupval-btn-rejeter:hover{background:#dc2626;}
+.rupval-empty{text-align:center;padding:40px;color:#16a34a;font-size:15px;font-weight:500;}
+/* MODAL */
+.rupval-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.4);display:flex;justify-content:center;align-items:center;z-index:9999;}
+.rupval-modal{background:white;width:480px;border-radius:16px;padding:28px;box-shadow:0 20px 60px rgba(0,0,0,.15);}
+.rupval-modal-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;}
+.rupval-modal-header h3{margin:0;font-size:17px;font-weight:700;color:#1e293b;}
+.rupval-modal-header span{cursor:pointer;color:#94a3b8;font-size:18px;}
+.rupval-modal-body{display:flex;flex-direction:column;align-items:center;gap:14px;padding:10px 0;}
+.rupval-modal-icon{width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;}
+.rupval-modal-icon.green{border:3px solid #16a34a;color:#16a34a;}
+.rupval-modal-title{margin:0;font-size:17px;font-weight:700;color:#1e293b;text-align:center;}
+.rupval-modal-sub{margin:0;font-size:14px;color:#94a3b8;}
+.rupval-modal-footer{display:flex;justify-content:center;gap:12px;margin-top:20px;}
+.rupval-modal-cancel{background:#f1f5f9;border:none;padding:11px 20px;border-radius:8px;font-size:14px;cursor:pointer;}
+.rupval-modal-confirm{background:#16a34a;color:white;border:none;padding:11px 22px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;}
+.rupval-modal-confirm-rejet{background:#dc2626;color:white;border:none;padding:11px 22px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;}
+/* MODAL REJET */
+.rupval-rejet-alert{background:#fff7ed;border-left:4px solid #f97316;border-radius:8px;padding:14px 16px;width:100%;}
+.rupval-rejet-alert-title{margin:0 0 4px 0;font-size:14px;font-weight:700;color:#ea580c;}
+.rupval-rejet-alert-sub{margin:0;font-size:13px;color:#92400e;}
+.rupval-rejet-field{display:flex;flex-direction:column;gap:8px;width:100%;}
+.rupval-rejet-field label{font-size:13px;font-weight:600;color:#374151;}
+.rupval-rejet-field textarea{padding:10px 12px;border:1px solid #e2e8f0;border-radius:8px;font-size:14px;outline:none;resize:vertical;font-family:inherit;}

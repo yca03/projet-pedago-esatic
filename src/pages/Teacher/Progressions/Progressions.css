@@ -1,0 +1,159 @@
+/* Progressions.css */
+
+.prog-page {
+  padding: 30px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.prog-header {
+  margin-bottom: 28px;
+}
+
+.prog-header h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.prog-subtitle {
+  margin: 4px 0 0 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* TABLE WRAPPER */
+.prog-table-wrap {
+  background: white;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+
+/* TABLE */
+.prog-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.prog-table thead tr {
+  border-bottom: 2px solid #f1f5f9;
+  background: #f8fafc;
+}
+
+.prog-table thead th {
+  padding: 14px 20px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  color: #94a3b8;
+  letter-spacing: 0.6px;
+}
+
+.prog-table tbody tr {
+  border-bottom: 1px solid #f1f5f9;
+  transition: background 0.15s;
+}
+
+.prog-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.prog-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.prog-table tbody td {
+  padding: 16px 20px;
+  vertical-align: middle;
+}
+
+/* CODE */
+.prog-code {
+  color: #2563eb;
+  font-family: monospace;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ENSEIGNANT */
+.prog-enseignant {
+  font-size: 14px;
+  color: #334155;
+  font-weight: 500;
+}
+
+/* DATE */
+.prog-date {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* BADGES */
+.prog-badge {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 20px;
+}
+
+.prog-badge-valid   { background: #dcfce7; color: #16a34a; }
+.prog-badge-waiting { background: #dbeafe; color: #2563eb; }
+.prog-badge-pending { background: #f1f5f9; color: #94a3b8; }
+.prog-badge-rejected{ background: #fee2e2; color: #dc2626; }
+
+/* ACTIONS */
+.prog-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.prog-btn-valider {
+  background: #16a34a;
+  color: white;
+  border: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+.prog-btn-valider:hover { background: #15803d; }
+
+.prog-btn-rejeter {
+  background: #ef4444;
+  color: white;
+  border: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+.prog-btn-rejeter:hover { background: #dc2626; }
+
+.prog-btn-deposer {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.prog-btn-deposer:hover { background: #1d4ed8; }

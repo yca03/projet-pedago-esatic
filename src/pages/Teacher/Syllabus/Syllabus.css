@@ -1,0 +1,318 @@
+/* Syllabus.css */
+
+.syl-page {
+  padding: 30px;
+  background: #f8fafc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ALERTE */
+.syl-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #fff5f5;
+  border-left: 4px solid #ef4444;
+  border-radius: 10px;
+  padding: 16px 20px;
+}
+
+.syl-alert-icon {
+  color: #ef4444;
+  font-size: 16px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.syl-alert-title {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ef4444;
+}
+
+.syl-alert-msg {
+  margin: 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* MAIN LAYOUT */
+.syl-main {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 20px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .syl-main { grid-template-columns: 1fr; }
+}
+
+/* FORM CARD */
+.syl-form-card {
+  background: white;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  overflow: hidden;
+}
+
+.syl-form-header {
+  padding: 22px 24px 0 24px;
+}
+
+.syl-form-header h3 {
+  margin: 0 0 4px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.syl-form-subtitle {
+  margin: 0;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+/* TABS */
+.syl-tabs {
+  display: flex;
+  gap: 0;
+  padding: 16px 24px 0 24px;
+  border-bottom: 2px solid #f1f5f9;
+  margin-top: 16px;
+}
+
+.syl-tab {
+  background: none;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #94a3b8;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.syl-tab:hover { color: #2563eb; }
+
+.syl-tab-active {
+  color: #2563eb;
+  font-weight: 700;
+  border-bottom: 2px solid #2563eb;
+}
+
+/* TAB CONTENT */
+.syl-tab-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* FIELDS */
+.syl-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.syl-field label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.syl-required { color: #ef4444; }
+
+.syl-field textarea {
+  padding: 12px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #334155;
+  resize: vertical;
+  outline: none;
+  font-family: inherit;
+  line-height: 1.6;
+  transition: border-color 0.2s;
+}
+
+.syl-field textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.08);
+}
+
+.syl-field-error {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #f59e0b;
+  font-weight: 500;
+}
+
+/* FORM FOOTER */
+.syl-form-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 20px 24px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.syl-btn-brouillon {
+  background: white;
+  border: 1px solid #e2e8f0;
+  color: #374151;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.syl-btn-brouillon:hover { background: #f8fafc; }
+
+.syl-btn-soumettre {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.syl-btn-soumettre:hover { background: #1d4ed8; }
+
+/* RIGHT COLUMN */
+.syl-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* STATUS CARD */
+.syl-status-card {
+  background: white;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.syl-status-card h4 {
+  margin: 0 0 16px 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.syl-status-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.syl-status-badge.rejected {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* TIMELINE */
+.syl-timeline {
+  display: flex;
+  gap: 4px;
+}
+
+.syl-step {
+  flex: 1;
+  text-align: center;
+  padding: 8px 6px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.syl-step-done     { background: #dcfce7; color: #16a34a; }
+.syl-step-rejected { background: #fee2e2; color: #dc2626; }
+.syl-step-active   { background: #2563eb; color: white;   }
+.syl-step-todo     { background: #f1f5f9; color: #94a3b8; }
+
+/* FILE CARD */
+.syl-file-card {
+  background: white;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.syl-file-card h4 {
+  margin: 0 0 14px 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+/* DROPZONE */
+.syl-dropzone {
+  border: 2px dashed #e2e8f0;
+  border-radius: 10px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.syl-dropzone:hover {
+  border-color: #2563eb;
+  background: #f8faff;
+}
+
+.syl-dropzone-over {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.syl-dropzone-icon {
+  font-size: 28px;
+  color: #cbd5e1;
+}
+
+.syl-dropzone-text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #475569;
+}
+
+.syl-dropzone-hint {
+  margin: 0;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.syl-dropzone-file {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #2563eb;
+}

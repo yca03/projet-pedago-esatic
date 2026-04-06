@@ -1,0 +1,46 @@
+/* CFIDashboard.css */
+.cfi-dash-page { padding: 30px; background: #f8fafc; min-height: 100vh; display: flex; flex-direction: column; gap: 22px; }
+
+/* HEADER */
+.cfi-dash-header h2 { margin: 0; font-size: 28px; font-weight: 700; color: #1e293b; }
+.cfi-dash-subtitle  { margin: 4px 0 0 0; font-size: 14px; color: #64748b; }
+
+/* ALERTE */
+.cfi-dash-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: #eff6ff;
+  border-left: 4px solid #2563eb;
+  border-radius: 10px;
+  padding: 16px 20px;
+}
+.cfi-dash-alert-icon { font-size: 18px; color: #2563eb; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+.cfi-dash-alert-title { margin: 0 0 8px 0; font-size: 14px; font-weight: 600; color: #1e3a8a; }
+.cfi-dash-alert-btn { background: none; border: none; color: #2563eb; font-size: 14px; font-weight: 600; cursor: pointer; padding: 0; }
+.cfi-dash-alert-btn:hover { text-decoration: underline; }
+
+/* STATS */
+.cfi-dash-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+@media (max-width: 1000px) { .cfi-dash-stats { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 600px)  { .cfi-dash-stats { grid-template-columns: 1fr; } }
+
+.cfi-dash-stat-card { background: white; border-radius: 14px; padding: 22px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.04); transition: transform 0.2s; }
+.cfi-dash-stat-card:hover { transform: translateY(-3px); }
+.cfi-dash-stat-icon  { width: 46px; height: 46px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 20px; margin-bottom: 14px; }
+.cfi-dash-stat-value { margin: 0 0 4px 0; font-size: 32px; font-weight: 800; color: #1e293b; }
+.cfi-dash-stat-label { margin: 0; font-size: 13px; color: #64748b; }
+
+/* CARD */
+.cfi-dash-card { background: white; border-radius: 14px; padding: 24px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.04); }
+.cfi-dash-card-header { margin-bottom: 20px; }
+.cfi-dash-card-header h3 { margin: 0 0 4px 0; font-size: 17px; font-weight: 700; color: #1e293b; }
+.cfi-dash-card-subtitle { margin: 0; font-size: 13px; color: #94a3b8; }
+
+/* UPS BARRES */
+.cfi-dash-ups { display: flex; flex-direction: column; gap: 16px; }
+.cfi-dash-up-row { display: grid; grid-template-columns: 180px 1fr 50px; align-items: center; gap: 14px; }
+.cfi-dash-up-nom  { font-size: 14px; font-weight: 500; color: #334155; }
+.cfi-dash-up-bar  { height: 10px; background: #f1f5f9; border-radius: 10px; overflow: hidden; }
+.cfi-dash-up-fill { height: 100%; border-radius: 10px; transition: width 0.5s; }
+.cfi-dash-up-taux { font-size: 13px; font-weight: 700; text-align: right; }
