@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./CoursModal.css";
+import { getUPs } from "../../../utils/upStorage"; 
 
 function CoursModal({ show, onClose }) {
+  const [ups, setUps] = useState([]); 
+
+
+  useEffect(() => {
+    if (show) {
+      setUps(getUPs());
+    }
+  }, [show]);
+
   if (!show) return null;
 
   return (
@@ -35,6 +45,19 @@ function CoursModal({ show, onClose }) {
           <div className="cmodal-field">
             <label>Intitulé du cours</label>
             <input placeholder="Ex: Algorithmique avancee" />
+          </div>
+
+          {/* 👇 AJOUT : champ déroulant Unité Pédagogique */}
+          <div className="cmodal-field">
+            <label>Unité Pédagogique (UP)</label>
+            <select>
+              <option value="">-- Sélectionner une UP --</option>
+              {ups.map((up) => (
+                <option key={up.id} value={up.id}>
+                  {up.nom}
+                </option>
+              ))}
+            </select>
           </div>
 
           <div className="cmodal-row">

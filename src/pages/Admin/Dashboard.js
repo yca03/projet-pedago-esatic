@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Dashboard.css";
 import {
@@ -13,6 +13,7 @@ import {
   FaTimes,
   FaUserPlus,
 } from "react-icons/fa";
+import UPModal from "./UPModal"; // 👈 AJOUT
 
 const stats = [
   {
@@ -94,6 +95,7 @@ const activites = [
 
 function Dashboard() {
   const navigate = useNavigate();
+  const [showUPModal, setShowUPModal] = useState(false); // 👈 AJOUT
 
   return (
     <div className="dashboard-page">
@@ -146,6 +148,14 @@ function Dashboard() {
               <FaPlus /> + Ajouter un enseignant
             </button>
 
+            {/* 👇 AJOUT : bouton Gérer les UPs */}
+            <button
+              className="action-btn action-up"
+              onClick={() => setShowUPModal(true)}
+            >
+              <FaBuilding /> Gérer les Unités Pédagogiques
+            </button>
+
             <button
               className="action-btn action-tertiary"
               onClick={() => navigate("/journaux")}
@@ -180,6 +190,9 @@ function Dashboard() {
         </div>
 
       </div>
+
+      {/* 👇 AJOUT : Modal Unités Pédagogiques */}
+      <UPModal show={showUPModal} onClose={() => setShowUPModal(false)} />
 
     </div>
   );
