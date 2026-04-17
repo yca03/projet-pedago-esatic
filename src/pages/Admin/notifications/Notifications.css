@@ -1,0 +1,164 @@
+/* ============================================
+   Notifications.css
+   ============================================ */
+
+.notif-page {
+  padding: 30px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+/* PAGE HEADER */
+.notif-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.notif-header h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.notif-subtitle {
+  margin: 4px 0 0 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.btn-tout-lu {
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-tout-lu:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+}
+
+/* CARD */
+.notif-card {
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+
+/* BADGE NON LUES */
+.notif-badge-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #eff6ff;
+  border-bottom: 1px solid #dbeafe;
+  padding: 14px 24px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ca8a04;
+}
+
+.notif-bell-icon {
+  font-size: 16px;
+  color: #f59e0b;
+}
+
+/* LISTE */
+.notif-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ITEM */
+.notif-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px 24px;
+  border-bottom: 1px solid #f1f5f9;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.notif-item:last-child {
+  border-bottom: none;
+}
+
+.notif-item:hover {
+  background: #f8fafc;
+}
+
+.notif-unread {
+  background: #f0f7ff;
+}
+
+.notif-unread:hover {
+  background: #e8f1fd;
+}
+
+/* DOT */
+.notif-dot-wrap {
+  padding-top: 5px;
+  flex-shrink: 0;
+}
+
+.notif-dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot-blue {
+  background: #2563eb;
+}
+
+.dot-grey {
+  background: transparent;
+  border: 2px solid #cbd5e1;
+}
+
+/* CONTENT */
+.notif-content {
+  flex: 1;
+}
+
+.notif-message {
+  margin: 0 0 6px 0;
+  font-size: 14px;
+  color: #1e293b;
+  line-height: 1.5;
+}
+
+.notif-message strong {
+  font-weight: 700;
+}
+
+/* META */
+.notif-meta {
+  margin: 0;
+  font-size: 12px;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.notif-clock {
+  font-size: 11px;
+  color: #cbd5e1;
+}
+
+.notif-tag {
+  font-family: monospace;
+  font-size: 11px;
+  color: #94a3b8;
+}

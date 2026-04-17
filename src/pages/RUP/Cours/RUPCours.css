@@ -1,0 +1,43 @@
+.rup-cours-page{padding:30px;background:#f8fafc;min-height:100vh;}
+.rup-cours-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px;}
+.rup-cours-header h2{margin:0;font-size:26px;font-weight:700;color:#1e293b;}
+.rup-cours-subtitle{margin:4px 0 0 0;font-size:14px;color:#64748b;}
+.rup-cours-btn-new{background:#2563eb;color:white;border:none;padding:11px 20px;border-radius:10px;font-size:14px;font-weight:600;cursor:pointer;}
+.rup-cours-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+@media(max-width:1100px){.rup-cours-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:700px){.rup-cours-grid{grid-template-columns:1fr;}}
+.rup-cours-card{background:white;border-radius:16px;padding:22px;border:1px solid #e2e8f0;box-shadow:0 4px 16px rgba(0,0,0,.05);display:flex;flex-direction:column;gap:14px;transition:transform .25s;}
+.rup-cours-card:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,.1);}
+.rup-cours-top{display:flex;justify-content:space-between;align-items:center;}
+.rup-cours-code{background:#eff6ff;color:#2563eb;font-size:12px;font-weight:600;padding:4px 10px;border-radius:6px;font-family:monospace;}
+.rup-cours-statut{font-size:13px;color:#16a34a;font-weight:500;}
+.rup-cours-titre{margin:0;font-size:17px;font-weight:700;color:#1e293b;}
+.rup-cours-niveaux{display:flex;gap:8px;flex-wrap:wrap;}
+.rup-cours-tag{background:#f1f5f9;color:#475569;font-size:13px;padding:4px 10px;border-radius:20px;border:1px solid #e2e8f0;}
+.rup-cours-ens{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:500;color:#1e293b;}
+.rup-cours-avatar{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:13px;flex-shrink:0;}
+.rup-cours-meta{display:flex;gap:20px;padding:12px 0;border-top:1px solid #f1f5f9;border-bottom:1px solid #f1f5f9;}
+.rup-cours-meta-col{display:flex;flex-direction:column;gap:5px;}
+.rup-cours-meta-col span{font-size:11px;font-weight:700;color:#94a3b8;letter-spacing:.6px;}
+.rup-cours-badge{display:inline-block;font-size:12px;font-weight:600;padding:3px 10px;border-radius:20px;}
+.rup-cours-valid{background:#dcfce7;color:#16a34a;}
+.rup-cours-rejected{background:#fee2e2;color:#dc2626;}
+.rup-cours-waiting{background:#dbeafe;color:#2563eb;}
+.rup-cours-pending{background:#f1f5f9;color:#94a3b8;}
+.rup-cours-actions{display:flex;gap:10px;}
+.rup-cours-btn-docs{border:1px solid #e2e8f0;background:white;color:#2563eb;padding:7px 14px;border-radius:8px;font-size:13px;cursor:pointer;}
+.rup-cours-btn-attr{border:1px solid #e2e8f0;background:white;color:#374151;padding:7px 14px;border-radius:8px;font-size:13px;cursor:pointer;}
+/* MODAL */
+.rup-modal-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.45);display:flex;justify-content:center;align-items:center;z-index:9999;}
+.rup-modal{background:white;width:560px;border-radius:16px;padding:28px;box-shadow:0 20px 60px rgba(0,0,0,.15);}
+.rup-modal-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;}
+.rup-modal-header h3{margin:0;font-size:18px;font-weight:700;color:#1e293b;}
+.rup-modal-header span{cursor:pointer;font-size:18px;color:#94a3b8;}
+.rup-modal-body{display:flex;flex-direction:column;gap:16px;}
+.rup-modal-row{display:flex;gap:14px;}
+.rup-modal-field{display:flex;flex-direction:column;gap:6px;flex:1;}
+.rup-modal-field label{font-size:13px;font-weight:600;color:#374151;}
+.rup-modal-field input,.rup-modal-field select{padding:10px 12px;border:1px solid #e2e8f0;border-radius:8px;font-size:14px;outline:none;}
+.rup-modal-footer{display:flex;justify-content:flex-end;gap:12px;margin-top:22px;}
+.rup-modal-cancel{background:#f1f5f9;border:none;padding:10px 18px;border-radius:8px;cursor:pointer;font-size:14px;}
+.rup-modal-save{background:#2563eb;color:white;border:none;padding:10px 20px;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600;}

@@ -1,0 +1,23 @@
+.cfiup-page { padding:30px; background:#f8fafc; min-height:100vh; }
+.cfiup-header { margin-bottom:28px; }
+.cfiup-header h2 { margin:0; font-size:26px; font-weight:700; color:#1e293b; }
+.cfiup-subtitle { margin:4px 0 0 0; font-size:14px; color:#64748b; }
+.cfiup-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+@media(max-width:1200px){.cfiup-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:700px){.cfiup-grid{grid-template-columns:1fr;}}
+.cfiup-card { background:white; border-radius:14px; padding:22px; border:1px solid #e2e8f0; box-shadow:0 4px 12px rgba(0,0,0,.04); display:flex; flex-direction:column; gap:12px; transition:transform .2s; }
+.cfiup-card:hover{transform:translateY(-3px);}
+.cfiup-top{display:flex;justify-content:space-between;align-items:center;}
+.cfiup-code{background:#eff6ff;color:#2563eb;font-size:12px;font-weight:700;padding:3px 10px;border-radius:6px;font-family:monospace;}
+.cfiup-statut{font-size:12px;font-weight:600;color:#16a34a;}
+.cfiup-nom{margin:0;font-size:17px;font-weight:700;color:#1e293b;}
+.cfiup-rup{margin:0;font-size:13px;color:#64748b;}
+.cfiup-stats{display:flex;gap:20px;padding:14px 0;border-top:1px solid #f1f5f9;border-bottom:1px solid #f1f5f9;}
+.cfiup-stat{display:flex;flex-direction:column;align-items:center;flex:1;}
+.cfiup-sv{margin:0;font-size:26px;font-weight:800;color:#1e293b;}
+.cfiup-sl{margin:0;font-size:12px;color:#94a3b8;}
+.cfiup-taux{display:flex;flex-direction:column;gap:6px;}
+.cfiup-tl{margin:0;font-size:13px;color:#475569;font-weight:500;}
+.cfiup-bar{height:8px;background:#f1f5f9;border-radius:10px;overflow:hidden;}
+.cfiup-fill{height:100%;border-radius:10px;}
+.cfiup-tv{margin:0;font-size:13px;font-weight:700;text-align:right;}

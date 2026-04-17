@@ -1,0 +1,23 @@
+.rupsyl-page{padding:30px;background:#f8fafc;min-height:100vh;}
+.rupsyl-header{margin-bottom:28px;}
+.rupsyl-header h2{margin:0;font-size:26px;font-weight:700;color:#1e293b;}
+.rupsyl-sub{margin:4px 0 0 0;font-size:14px;color:#64748b;}
+.rupsyl-table-wrap{background:white;border-radius:14px;border:1px solid #e2e8f0;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.04);}
+.rupsyl-table{width:100%;border-collapse:collapse;}
+.rupsyl-table thead tr{background:#f8fafc;border-bottom:2px solid #f1f5f9;}
+.rupsyl-table thead th{padding:14px 20px;text-align:left;font-size:11px;font-weight:700;color:#94a3b8;letter-spacing:.6px;}
+.rupsyl-table tbody tr{border-bottom:1px solid #f1f5f9;}
+.rupsyl-table tbody tr:last-child{border-bottom:none;}
+.rupsyl-table tbody tr:hover{background:#f8fafc;}
+.rupsyl-table tbody td{padding:16px 20px;vertical-align:middle;}
+.rupsyl-code{color:#2563eb;font-family:monospace;font-size:14px;font-weight:600;}
+.rupsyl-ens{font-size:14px;color:#334155;font-weight:500;}
+.rupsyl-date{font-size:14px;color:#94a3b8;}
+.rupsyl-badge{display:inline-block;font-size:12px;font-weight:600;padding:5px 14px;border-radius:20px;}
+.rupsyl-valid{background:#dcfce7;color:#16a34a;}
+.rupsyl-rejected{background:#fee2e2;color:#dc2626;}
+.rupsyl-waiting{background:#dbeafe;color:#2563eb;}
+.rupsyl-pending{background:#f1f5f9;color:#94a3b8;}
+.rupsyl-actions{display:flex;gap:8px;}
+.rupsyl-btn-v{background:#16a34a;color:white;border:none;width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:pointer;}
+.rupsyl-btn-r{background:#ef4444;color:white;border:none;width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:pointer;}

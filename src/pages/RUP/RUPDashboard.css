@@ -1,0 +1,64 @@
+.rup-dash-page { padding:30px; background:#f8fafc; min-height:100vh; display:flex; flex-direction:column; gap:22px; }
+
+/* ALERTE */
+.rup-dash-alert { display:flex; align-items:flex-start; gap:12px; background:#fff7ed; border-left:4px solid #f97316; border-radius:10px; padding:16px 20px; }
+.rup-alert-icon { color:#f97316; font-size:18px; flex-shrink:0; margin-top:2px; }
+.rup-alert-title { margin:0 0 8px 0; font-size:14px; font-weight:600; color:#9a3412; }
+.rup-alert-btn { background:none; border:none; color:#2563eb; font-size:14px; font-weight:600; cursor:pointer; padding:0; }
+.rup-alert-btn:hover { text-decoration:underline; }
+
+/* STATS */
+.rup-dash-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+@media(max-width:1000px){.rup-dash-stats{grid-template-columns:repeat(2,1fr);}}
+.rup-stat-card { background:white; border-radius:14px; padding:22px; border:1px solid #e2e8f0; box-shadow:0 4px 12px rgba(0,0,0,.04); transition:transform .2s; }
+.rup-stat-card:hover{transform:translateY(-3px);}
+.rup-stat-icon { width:46px; height:46px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:20px; margin-bottom:14px; }
+.rup-stat-value { margin:0 0 4px 0; font-size:32px; font-weight:800; color:#1e293b; }
+.rup-stat-label { margin:0 0 10px 0; font-size:13px; color:#64748b; }
+.rup-stat-bar { height:6px; background:#f1f5f9; border-radius:10px; overflow:hidden; }
+.rup-stat-fill { height:100%; border-radius:10px; }
+
+/* BOTTOM */
+.rup-dash-bottom { display:grid; grid-template-columns:2fr 1fr; gap:20px; }
+@media(max-width:900px){.rup-dash-bottom{grid-template-columns:1fr;}}
+
+/* CARD */
+.rup-dash-card { background:white; border-radius:14px; padding:24px; border:1px solid #e2e8f0; box-shadow:0 4px 12px rgba(0,0,0,.04); }
+.rup-card-head { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:18px; }
+.rup-card-head h3 { margin:0 0 4px 0; font-size:17px; font-weight:700; color:#1e293b; }
+.rup-card-sub { margin:0; font-size:13px; color:#94a3b8; }
+.rup-count-badge { background:#f97316; color:white; width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:700; flex-shrink:0; }
+
+/* TABLE */
+.rup-table { width:100%; border-collapse:collapse; }
+.rup-table thead tr { border-bottom:2px solid #f1f5f9; }
+.rup-table thead th { padding:8px 12px; text-align:left; font-size:11px; font-weight:700; color:#94a3b8; letter-spacing:.6px; }
+.rup-table tbody tr { border-bottom:1px solid #f1f5f9; transition:background .15s; }
+.rup-table tbody tr:last-child { border-bottom:none; }
+.rup-table tbody tr:hover { background:#f8fafc; }
+.rup-table tbody td { padding:12px; vertical-align:middle; }
+.rup-code { color:#2563eb; font-family:monospace; font-size:13px; font-weight:700; }
+.rup-ens { font-size:14px; color:#334155; }
+.rup-soumis { font-size:13px; color:#94a3b8; }
+.rup-type { display:inline-block; font-size:12px; font-weight:600; padding:3px 10px; border-radius:20px; }
+.rup-type-syl  { background:#dbeafe; color:#2563eb; }
+.rup-type-prog { background:#fed7aa; color:#ea580c; }
+.rup-btn-valider { background:#2563eb; color:white; border:none; padding:6px 14px; border-radius:8px; font-size:13px; font-weight:600; cursor:pointer; }
+.rup-btn-valider:hover { background:#1d4ed8; }
+
+/* REUNION */
+.rup-btn-planifier { background:white; border:1px solid #e2e8f0; color:#2563eb; padding:7px 14px; border-radius:8px; font-size:13px; font-weight:500; cursor:pointer; }
+.rup-reunion-card { background:#f8fafc; border-radius:10px; padding:16px; display:flex; flex-direction:column; gap:12px; }
+.rup-reunion-top h4 { margin:0; font-size:15px; font-weight:700; color:#1e293b; }
+.rup-reunion-date { margin:0; font-size:13px; color:#64748b; }
+.rup-reunion-participants { display:flex; align-items:center; gap:10px; }
+.rup-avatars { display:flex; }
+.rup-avatar { width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:11px; border:2px solid white; margin-left:-8px; }
+.rup-avatars .rup-avatar:first-child { margin-left:0; }
+.rup-nb { font-size:13px; color:#64748b; }
+.rup-btn-details { background:white; color:#2563eb; border:1px solid #dbeafe; padding:8px 14px; border-radius:8px; font-size:13px; cursor:pointer; align-self:flex-start; }
+.rup-btn-details:hover { background:#eff6ff; }
+
+/* NAVBAR RETOUR */
+.navbar-retour { background:white; border:1px solid #e2e8f0; color:#1e293b; padding:7px 14px; border-radius:8px; font-size:13px; font-weight:500; cursor:pointer; margin-right:10px; }
+.navbar-retour:hover { background:#f8fafc; }
