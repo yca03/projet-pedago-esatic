@@ -9,6 +9,10 @@ import DPLayout      from "./layouts/DPLayout";
 import CFILayout     from "./layouts/CFILayout";
 import RUPLayout     from "./layouts/RUPLayout";
 
+// Profile components
+import EnseignantProfile from "./components/Enseignant/EnseignantProfile";
+import AdminProfile from "./components/Admin/AdminProfile";
+
 // ADMIN
 import Dashboard         from "./pages/Admin/Dashboard";
 import Login             from "./pages/Admin/Auth/Login";
@@ -42,7 +46,6 @@ import CFINotifications from "./pages/CFI/Notifications/Notifications";
 import CFISyllabus      from "./pages/CFI/Syllabus/Syllabus";
 import CFIProgressions  from "./pages/CFI/Progressions/Progressions";
 
-
 // RUP
 import RUPDashboard     from "./pages/RUP/RUPDashboard";
 import RUPEnseignants   from "./pages/RUP/Enseignants/RUPEnseignants";
@@ -65,7 +68,7 @@ function App() {
   const isTeacher = userData?.role === "teacher";
   const isDP      = userData?.role === "dp";
   const isCFI     = userData?.role === "cfi";
-   const isRUP     = userData?.role === "rup";
+  const isRUP     = userData?.role === "rup";
 
   const AdminRoute   = ({ element }) => isAdmin   ? element : <Navigate to="/login" />;
   const TeacherRoute = ({ element }) => isTeacher ? element : <Navigate to="/login" />;
@@ -109,20 +112,21 @@ function App() {
         <Route path="/cfi/validations"   element={<CFIRoute element={<CFILayout><CFIValidations /></CFILayout>} />} />
         <Route path="/cfi/notifications" element={<CFIRoute element={<CFILayout><CFINotifications /></CFILayout>} />} />
         <Route path="/cfi/progressions"  element={<CFIRoute element={<CFILayout><CFIProgressions /></CFILayout>} />} />
-        <Route path="/cfi/syllabus"   element={<CFIRoute element={<CFILayout><CFISyllabus /></CFILayout>} />} />
+        <Route path="/cfi/syllabus"      element={<CFIRoute element={<CFILayout><CFISyllabus /></CFILayout>} />} />
 
-
-
-                {/* RUP */}
+        {/* RUP */}
         <Route path="/rup/dashboard"     element={<RUPRoute element={<RUPLayout><RUPDashboard /></RUPLayout>} />} />
         <Route path="/rup/enseignants"   element={<RUPRoute element={<RUPLayout><RUPEnseignants /></RUPLayout>} />} />
         <Route path="/rup/cours"         element={<RUPRoute element={<RUPLayout><RUPCours /></RUPLayout>} />} />
         <Route path="/rup/syllabus"      element={<RUPRoute element={<RUPLayout><RUPSyllabus /></RUPLayout>} />} />
         <Route path="/rup/progressions"  element={<RUPRoute element={<RUPLayout><RUPProgressions /></RUPLayout>} />} />
-         <Route path="/rup/validations"   element={<RUPRoute element={<RUPLayout><RUPValidations /></RUPLayout>} />} />
-         <Route path="/rup/reunions"      element={<RUPRoute element={<RUPLayout><RUPReunions /></RUPLayout>} />} />
-        <Route path="/rup/notifications" element={<RUPRoute element={<RUPLayout><RUPNotifications /></RUPLayout>} />} />  
+        <Route path="/rup/validations"   element={<RUPRoute element={<RUPLayout><RUPValidations /></RUPLayout>} />} />
+        <Route path="/rup/reunions"      element={<RUPRoute element={<RUPLayout><RUPReunions /></RUPLayout>} />} />
+        <Route path="/rup/notifications" element={<RUPRoute element={<RUPLayout><RUPNotifications /></RUPLayout>} />} />
 
+        {/* PROFILS */}
+        <Route path="/profile/enseignant" element={<TeacherRoute element={<TeacherLayout><EnseignantProfile /></TeacherLayout>} />} />
+        <Route path="/profile/admin" element={<AdminRoute element={<MainLayout><AdminProfile /></MainLayout>} />} />
 
       </Routes>
     </Router>
